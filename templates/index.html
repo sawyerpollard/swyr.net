@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>[Sawyer Pollard]</h1>
+<br>
+<p>Email: mail(at)swyr.net</p>
+<p>GPG key: 50CB 5CF6 65BB 30B0 4209 8FEB D70C 1462 0038 8DAE</p>
+<p>URI: swyr.net</p>
+<p>Call sign: KD2WZH</p>
+<p>Location: Western Mass</p>
+<br><br>
+<h2>[index]</h2>
+<br>
+<ul>
+    <li><a href="{{ get_url(path='@/entries/_index.md') }}">entries</a></li>
+    <li><a href="{{ get_url(path='@/interests/general.md') }}">general interests</a></li>
+    <li><a href="{{ get_url(path='@/interests/music.md') }}">music interests</a></li>
+    <li><a href="{{ get_url(path='@/achievements/general.md') }}">general achievements</a></li>
+    <li><a href="{{ get_url(path='@/achievements/computer.md') }}">computer achievements</a></li>
+    <li><a href="{{ get_url(path='@/experience/work.md') }}">work experience</a></li>
+</ul>
+<br><br>
+<h2>[links]</h2>
+<br>
+<p>GitHub: <a href="https://github.com/sawyerpollard">github.com/sawyerpollard</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/sawyerpollard">linkedin.com/in/sawyerpollard</a></p>
+
+{% endblock content %}
