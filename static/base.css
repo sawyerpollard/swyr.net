@@ -1,29 +1,47 @@
+@font-face {
+    font-family: "VT323";
+    src:
+        local("VT323"),
+        url("VT323-Regular.ttf");
+}
+
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 body {
-    background-color: #121212;
+    background-color: white;
 }
 
 main {
     max-width: 80ch;
     padding: 0.8rem;
-    color: white;
-    font-family: monospace;
+    color: black;
+    font-family: "VT323", monospace;
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 ul {
     list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
 }
 

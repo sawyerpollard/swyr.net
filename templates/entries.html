@@ -5,7 +5,6 @@
 <p>[{{ section.title }}]</p>
 
 {% if section.subsections %}
-<br>
 <ul>
     {% for subsection in section.subsections %}
     {% set section = get_section(path=subsection) %}
@@ -14,14 +13,12 @@
 </ul>
 {% else %}
 {% if section.pages %}
-<br>
 <ul>
     {% for page in section.pages %}
     <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 {% else %}
-<br>
 <p>Nothing here.</p>
 {% endif %}
 {% endif %}
